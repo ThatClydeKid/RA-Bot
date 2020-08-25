@@ -1,0 +1,26 @@
+This document is not a contract or agreement, and may not be
+construed as such. The purpose of this document is to provide
+operators and users with an understanding of the privacy
+capabilities of the bot.
+
+The Discord Bot known as RA Bot recieves and reads messages sent
+on any channel it is permitted to read messages. These messages
+are stored temporarily on the machine which is operating the bot.
+After the message has been processed by the bot, the data space
+storing the message is marked as empty and can be overwritten.
+
+Operators of the bot are explicitly prohibited in the terms and
+agreements from modifying the bot in any way which would change
+the above statements.
+
+The bot will also not transmit data to the creator's computer
+except that data which he would recieve in his capacity as the
+distinct role of operator, should he be an operator.
+
+That said, the creator of the bot does not have any background
+in cyber security, and makes no commitment or guarantees that
+and data used by the bot will not be intercepted by a 3rd Party
+malicious or otherwise.
+
+It is recomended any sensetive information is discussed in a
+channel which the bot does not have access to.

@@ -1,0 +1,127 @@
+Terms and Agreements:
+
+Brian C. Smith, the creator and sole originator of this code
+(henceforth refered to as "the creator") releases the code for the
+RA Bot (henceforth collectively refered to as "the bot" or "the 
+code") for all uses public and private except those explicitly 
+prohibited below in the Terms and Agreements (henceforth refered
+to as "the terms"). The bot may not be distributed except in
+circumstances explicitly stated in the terms.
+
+Henceforth the phrase "the operator" shall refer to the person or 
+persons directly responsible for initiating the operation of the 
+bot on a given computer, and distinct from, though not nessecarily 
+excluding, the creator. More than one operator will be collectively
+refered to as "the operators". Unless otherwise specified, the 
+term "the operators" refers to all operators collectively.
+
+Henceforth the phrase "the user" shall refer to human person
+using a Discord App client or operating a seperate Discord Bot
+which interacts with the bot through the Discord Application. For
+cases in which a person could be identified as both a user and as
+an operator, the operator shall always be the person who is the
+operator of the bot in use in the matter in question. Operators who
+interact with their own instance of the bot will be considered
+operators for any interaction where they are the operator of the
+bot. Operators who interact with an instance of the bot for which
+they are not the operator will be considered a user in the case of
+that particular interaction, this does not prohibit them from being
+considered the operator in a seprate interaction, even should both
+interactions take place simultaneously. More than one user will be 
+collectively refered to as "the users". Unless otherwise specified,
+the term "the users" refers to all users collectively.
+
+Henceforth the phrase "the distributor" shall refer to any person
+who distributes the bot via any medium. The distributor may be,
+but does not have to be, the creator, any of the operators, or any
+of the users. More than one distributor will be collectively
+refered to as "the distributors". Unless otherwise specified, the 
+term "the distributors" refers to all distributors collectively.
+
+All rights, duties, responsibilites, restrictions, and penalties
+detailed below shall fall upon the operator of the bot unless
+explicitly agreed upon by both the operator and the one or several
+users with whom their instance of the bot interacts. The operator
+shall not hold any user(s) accountable for any effects of their
+interaction with the bot unless explicitly agreed upon by both the
+operator and the individual user.
+
+The users, except in situations where they are the operator, are
+not in contract or agreement with the creator. Any contract or 
+agreement between the user and the operator shall not create
+contract or agreement between the user and the creator.
+Any contract between the user and the operator which insinuates or
+attempts to create contract or agreement between the user and the
+creator shall be null and void until such time as the clauses
+attempting to create or insinuating the existence of contract or
+agreement between the user and the creator have been removed.
+
+All operators and distributors, by using the bot and distributing
+the bot respectively, agree to abide by any and all of the terms.
+Furthermore, they agree to abide by the most recent version of the
+terms regardless of which version of the bot they operate. The 
+creator may not provide notice to the operators or the distributors
+in the event of a change to the terms. The operators and the
+the distributors are responsible for reading and abiding by the 
+terms. Finally, operators and distributors to agree any and all 
+penalties and punishments elaborated in the terms. The creator
+will only pursue penalties and/or punishments in the event the
+he has reasonable evidence the operator the distributor has
+violated the terms.
+
+The presence of two intances of the bot in one Discord Server is
+prohibited. The operator of the most recent bot to be added to the
+Discord Server holds sole responsibility for any outcome or
+damages this may cause. The operator of either bot may not hold the
+creator responsible for any outcomes in any way.
+
+Neither the operators nor the distributors may not falsely claim to
+be the creator. The operators and the distributors may not falsely
+claim to have originated or created the bot in whole or in part.
+The operator may not derive income from operation of the bot. The 
+operators and the distributors may not sell the code in whole or in
+part.
+
+The bot may not be modified to record or store the content of
+messages or other related data which the bot recieves. The bot may
+not be modified in any way which would allow the operator to read 
+the content of messages or other related data which it would not
+otherwise make available.
+
+The distributors may distribute the bot if, and only if they
+include the entire file of the bot and related materials, including
+but not limited to these terms, the Privacy Policy, and any other
+content related to the bot. Distributors who fail to comply will
+lose any rights to distribution granted by these terms and any other
+prior agreements between the distributor and the creator, except
+those which explicitly relieve them of these requirements.
+Distributors who fail to comply will also be held soley responsible
+for the actions of any of those deemed to have received the bot
+without all the related materials by the infringing distributor's
+actions.
+
+The creator takes no responsibility for any injuries or damages,
+physical, mental, emotional, or otherwise which may arrise from
+use of the bot. The operator takes full responsibility for any
+injuries or damages, physical, mental, emotional, or otherwise which
+may arrise from use of the bot, except for those responsibilities
+which the user has explicitly agreed to accepted. Users are responsible
+only for injuries or damages, physical, mental, emotional, or otherwise
+which arrise from use of the bot in cases which they have
+explicitly agreed upon with the operator.
+
+No other document shall be considered or construed as an addition,
+ammendment, or an abridging of this document, except for hand-written
+and signed documents from the creator himself which list exemptions
+or modifications of specific clauses within this document. These
+hand-written exemptions or modifications shall be applicable only
+to the person to whom they are issued, and shall not be
+construed as exemptions or modificatoinsfor any other persons.
+The creator retains the right to revoke or nullify any hand-written
+exemtions or modifications in any format at any time.
+
+The creator retains the right to revoke any permissions granted
+to any person, including permission explicitly granted by the
+terms with or without explanation at any time.
+
+This is the end of the Terms and Agreements. 
