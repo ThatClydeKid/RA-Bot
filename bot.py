@@ -273,4 +273,3 @@ async def allowance(ctx):
 
     
 #await client.start(TOKEN)
-#await client.start('NzQ2ODAyNjM3Njg0NDczODc2.X0FoJw._PJYkdqiZp94jZ1W4hco8dIzDGI')
