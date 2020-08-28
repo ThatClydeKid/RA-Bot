@@ -32,6 +32,41 @@ botHome[k].guild.
 """
 
 async def checkSend(ctx,mCont,returnTF = False):
+    
+    """
+    
+    checkSend() is RA Bot's version of the .send() method.
+    
+    Inputs:
+        ctx - Accepts Discord.Context objects and
+              Discord.Text_Channel objects. Is used to determine
+              where messages will be sent.
+        mCont - Accepts strings. The message to be sent.
+        returnTF - Accepts Boolean. Whether or not a Boolean value
+                   will be returned by the function. Default:
+                   False.
+                   
+    Outputs:
+        msgSent - Returns Boolean. If a message is sent returns
+                  True, if not returns False.
+                  
+    Description:
+        Uses a For loop to iterate through the array of channels
+        where the bot is set up, and compares their server to
+        the server of the ctx object. If a match is found, the
+        message is sent to the bot's home text channel on the 
+        server. If the initBot function has not completed its
+        duties on the server an error message is sent reminding
+        people to use the initBot command.
+        
+    Work To Be Done:
+        - Add time delay to error message to prevent spamming on
+          servers where the initBot command has not been completed.
+        - Restructure botHome array to avoid using global
+          variables. (*This will likely require a broader general
+          overhaul.*)
+    
+    """
     msgSent= False
     for i in range(0,botHome.size):
         if botHome[i].guild == ctx.guild:
@@ -45,6 +80,35 @@ async def checkSend(ctx,mCont,returnTF = False):
         return msgSent
     
 async def getRA(ctx):
+    
+    """
+    
+    getRA() is part of the initBot process, used to determine
+    which role on a server represents a Resident Assistant.
+
+    Inputs:
+        ctx - Accepts Discord.Context objects and
+              Discord.Text_Channel objects. Is used to determine
+              where to pull role data from.
+    
+    Outputs:
+        i - Returns a Discord.Role object. Represents the role
+            selected by the user to denote Resident Assistants.
+            
+    Description: 
+        Retrieves a list of roles on the relevant server and
+        prompts the user to select one by typing in chat. Allows
+        5 attempts after which it informs the user they've exceeded
+        their number of attempts.
+        
+    Work To Be Done:
+        - "if notConfirmed:" statement does not currently return
+          a value, which will lead to an exception. It needs to
+          return a flag value.
+        - If only one role exists an empty np.array is returned,
+          this may need to be addressed.
+          
+    """
     
     roleList = np.array([])
     
@@ -89,12 +153,44 @@ async def getRA(ctx):
 
 @client.event
 async def on_ready():
+    
+    """
+    
+    Overwriting of Discord.py's on_ready() method
+    
+    Description:
+        Produces a console message when the bot is ready and
+        initializes the global botHome array.
+        
+    Work To Be Done:
+        - Restructure botHome array to avoid using global
+          variables. (*This will likely require a broader general
+          overhaul.*)
+    
+    """
+    
     print("Bot is Online")
     global botHome
     botHome = np.array([])
     
 @client.command(hidden = True)
 async def setHome(ctx):
+    
+    """
+    
+    setHome() is used by initBot() to designate the home channel of
+    a server, can also be used independently as a command.
+    
+    Inputs:
+        ctx - Accepts a Discord.Context object. Used to handle the
+              destination of several parts of the function.
+              
+    Outputs:
+        botHome - Returns the Global botHome array. (Currently
+                  )
+    
+    """
+    
     global botHome
     if ctx.channel == ctx.guild.channels[0]:
         await ctx.send("Please don't use me in general channel.")
@@ -271,5 +367,31 @@ async def allowance(ctx):
     else:
         await checkSend(ctx, f"{ctx.nick} has recieved an extra large allowance of 200 points.")
 
+
+@client.command()
+async def createPoll(ctx, *, question):
+    await checkSend(ctx,"What are the options? Seperate options with a semicolon (;)")
     
+    def check(m):
+            print(m.content)
+            return m.author == ctx.author
+        
+    maxIter = 5
+    totIter = 0
+    notConfirmed = True
+        
+    while notConfirmed and totIter < maxIter:
+            
+        raConfirm = await client.wait_for('message',check=check)
+        
+        for i in roleList:
+            if i.name == raConfirm.content:
+                notConfirmed = False
+                return i
+        
+    if notConfirmed:
+        await checkSend(ctx, "You've exceded your number of attempts, please restart the init process.")
+    
+    
+#await client.start(TOKEN)
 #await client.start(TOKEN)
